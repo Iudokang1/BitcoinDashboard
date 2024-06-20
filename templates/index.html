@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Analysis Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- CSS Styles -->
+    <style>
+        /* Body Styles */
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #ffcccb; /* Background color */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #fbeee6; /* Beige color */
+            color: #333;
+            padding: 1rem 2rem;
+            text-align: center;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Heading Styles */
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        /* Container Styles */
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 2rem 0;
+            text-align: center;
+            background-color: #fff; /* White background */
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Subheading Styles */
+        h2 {
+            color: #ff6b6b; /* Pink color */
+            border-bottom: 2px solid #ff6b6b; /* Pink color */
+            display: inline-block;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+
+        /* Secondary Heading Styles */
+        h4 {
+            color: #2c3e50;
+            font-weight: bold;
+            font-size: larger;
+            margin-top: 1.5rem;
+        }
+
+        /* Image Styles */
+        img {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 5px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 1.5rem;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        /* Paragraph Styles */
+        p {
+            background-color: #ecf0f1;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Bitcoin Analysis Dashboard</h1>
+    </header>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        <!-- First Section - Bitcoin Trade Volume vs Transaction Volume Ratio -->
+        <h2>Bitcoin Trade Volume vs Transaction Volume Ratio</h2>
+        <h4>This is a graph showing the Bitcoin Trade Volume vs Transaction Volume Ratio.</h4>
+        <p>The evolution and spread of Bitcoin across time are depicted in the Bitcoin trading volume graph. The graphic shows the early stages with little uptake at first. The spikes in the graph show that trade volume increased as awareness increased. The plot also emphasizes the market's turbulence and swings. This graph illustrates how the trade volume compares to transaction volume, indicating market activity.</p>
+        <img src="static/images/Bitcoin Trade.svg" alt="Bitcoin Trade Volume vs Transaction Volume Ratio">
+
+        <!-- Second Section - Total Bitcoins in Circulation Over Time -->
+        <h2>Total Bitcoins in Circulation Over Time</h2>
+        <h4>This is a graph showing the Total bitcoins in circulation over time</h4>
+        <p>Plotting the whole amount of bitcoin in circulation over time revealed an exponential and progressive increase. Since its inception, Bitcoin's value has been gradually rising. The graph illustrates how the currency is being adopted more widely. This graph shows the growth of total bitcoins in circulation, reflecting the expanding supply of Bitcoin.</p>
+        <img src="static/images/Total bitcoin.svg" alt="Total Bitcoins in Circulation Over Time">
+    </div>
+</body>
+</html>
